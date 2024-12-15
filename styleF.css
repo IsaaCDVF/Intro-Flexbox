@@ -1,3 +1,52 @@
+
+/* Estilos, practica de alineamiento */
+.genders-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:4rem ;
+    gap: 3rem;
+}
+.genders-card{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: 200ms;
+}
+.genders-card:hover{
+    background-color: rgb(20, 19, 19);
+    transform: translateY(-10px)
+    
+}
+
+.info-gender-card{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    
+}
+.image-gender-container{
+    width: 35%;
+}
+.image-gender-container img{
+    width: 100%;
+    border-radius: 10px;
+}
+.icon-gender-container{
+    width: 4.5rem;
+}
+.icon-gender-container img{
+    border-radius: 20px;
+    width: 100%;
+    filter: invert(100); /* Invierte los colores de una imagen */
+}
+
+
+
+
 .Contenedor1{/* Uso de display: flex en el Contenedor principal*/
     display: flex;/* ajusta los elementos en fila */
     flex-direction: row;/* Da direccion a nuestro flex */
@@ -89,3 +138,52 @@ box-sizing: border-box;
 
 
 }
+/* Estilos del footer */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 3rem;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    z-index: 1000;
+}
+.footer-logo-container{
+    width: 5rem;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid crimson;
+}
+.footer-logo-container img{
+    width: 100%;
+    border-radius: 100%;
+}
+.links-container{
+    display:flex;
+    font-weight: bold;
+    gap: 3.5rem;
+
+}
+.links-container li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.logos-container{
+    display: flex;
+    gap: 3.5rem;
+    border-radius: 20px;
+}
+.logos-container li{
+    width: 4rem;
+}
+
+.logos-container img{
+filter: invert(100);
+width: 100%;
+transition: 200ms;
+}
+.logos-container img:hover{
+    transform: scale(1.3);
+}
+
