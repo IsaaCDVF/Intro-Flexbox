@@ -1,0 +1,91 @@
+.Contenedor1{/* Uso de display: flex en el Contenedor principal*/
+    display: flex;/* ajusta los elementos en fila */
+    flex-direction: row;/* Da direccion a nuestro flex */
+    justify-content: space-between;/* alinea los elementos en la direccion que esta el "flex-direction" usando el maximo espacio posible entre ellos */
+    flex-wrap: wrap;/* permite que los contenedores se alinien automaticamente conforme va cambiando el tamaño de la pantalla */
+    /* Colores de distincion del primer contenedor */
+    background-color:blueviolet ;
+    border: 5px solid crimson; 
+    color: white;
+    
+}
+.contenedor-hijo1{
+ background-color: blue;
+ width: 20rem; /* ancho asignado*/
+ padding: 2rem 3rem; /* relleno del contenedor */
+ height: auto;
+ margin: 10px;/* Separacion entre las tarjetas dentro del contenedor */
+ border-radius: 25px;/* bordes redondeados */
+ flex-grow: 1; 
+ display: flex; /* Hacemos flexibles los items dentro de este contenedor */
+ flex-direction:column;
+ align-items: center; /* psicionamos de manera centrada los elemntos */
+box-sizing: border-box;
+}
+.contenedor-hijo1-img{
+    width: 45%;
+    padding: 0;
+}
+.contenedor-hijo1-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* -------------- */
+.flex-container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;/* Los elembntos quedan distribuidos en lineas multiples */
+    justify-content: space-around; /* Es un espacio alrededor entre cada elemento */
+    align-items: center; /* Centra verticalmente los elementos entre cada elemento */
+    gap: 15px; /* Espacios adicionales entre los items */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.item{
+    background-color: #007BFF;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 15px;
+    width: 100px; /* ancho inicial */
+    height: 100px;/* Altura fija que mantiene la forma */
+}
+
+/* Uso de fixed y Stycky */
+.fixed-menu{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 10rem;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0.8rem;
+    transition: 200ms;
+    box-shadow: 0 4px 8px rgba(0, 0,0,0.1); /* Sombra con efecto flotante */
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44); 
+    background: linear-gradient(to right, #4286f4, #373B44);
+
+}
+.fixed-menu:hover{
+    transform: scale(1.2);
+}
+/*Sticky */
+.sticky-header{
+    width: 100%;
+    position: sticky;
+    top: 0; /* Se pega en la parte superior cuando llegamos a ese punto */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index:1000 ; /* Asegura que este sobre el contenido */
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44); 
+    background: linear-gradient(to right, #4286f4, #373B44); 
+
+
+}
